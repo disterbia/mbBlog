@@ -1,0 +1,35 @@
+#띄어쓰기 및 들여쓰기 주의
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+
+      
+  datasource:
+    url: jdbc:mysql://localhost:3306/cha?serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: cha
+    password: bitc5600
+
+    
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      
+file:
+  path: C:/Users/it/Desktop/Spring/mbBlog/src/main/resources/static/userProfile/
